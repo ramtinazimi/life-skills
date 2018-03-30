@@ -5,4 +5,4 @@ This project intends to tackle this problem and to touch upon some skills which 
 The following overview is a summary of skills which can be looked into. It will be extended as new skills are added to this project.
 
 Overview.
-1. CV skills
+1. CV-Course: How to create a good CV with special attention to structure, design, language and content?
