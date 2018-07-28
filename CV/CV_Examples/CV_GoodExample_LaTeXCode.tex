@@ -1,0 +1,322 @@
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper]{moderncv}
+%\setlength{\tabcolsep}{12pt}
+\newcommand\blfootnote[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+\usepackage[hang,flushmargin]{footmisc}
+\usepackage{fontawesome}
+\usepackage[full]{textcomp}
+\usepackage{kpfonts}
+\usepackage{genealogytree}
+\usepackage{tikz}
+\newcommand{\ExternalLink}{%
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
+
+
+\newcommand*{\skypesocialsymbol} {%
+	\protect\raisebox{-0.085em}{%
+		\protect\begin{tikzpicture}[y=0.08em,x=0.08em,xscale=0.022,yscale=-0.022, inner sep=0pt, outer sep=0pt]
+		\protect\path[fill=color2,even odd rule] (487.6550,288.9690) .. controls (489.0610,278.5690) and
+		(489.8700,267.9960) .. (489.8700,257.2330) .. controls (489.8700,128.0770) and
+		(384.5990,23.3610) .. (254.7670,23.3610) .. controls (241.8630,23.3610) and
+		(229.2120,24.4210) .. (216.9010,26.4410) .. controls (194.8280,12.0570) and
+		(168.5590,3.6740) .. (140.2880,3.6740) .. controls (62.7660,3.6740) and
+		(0.0000,66.4820) .. (0.0000,143.9800) .. controls (0.0000,172.1780) and
+		(8.2990,198.3740) .. (22.5900,220.3690) .. controls (20.6650,232.3860) and
+		(19.6810,244.6920) .. (19.6810,257.2290) .. controls (19.6810,386.4050) and
+		(124.8980,491.1100) .. (254.7660,491.1100) .. controls (269.4230,491.1100) and
+		(283.6930,489.6840) .. (297.5620,487.1780) .. controls (319.1120,500.5470) and
+		(344.4960,508.3260) .. (371.7080,508.3260) .. controls (449.2100,508.3260) and
+		(512.0010,445.5020) .. (512.0010,368.0120) .. controls (511.9980,338.7190) and
+		(503.0410,311.4840) .. (487.6550,288.9690) -- cycle(276.7400,429.5960) ..
+		controls (202.0340,433.4870) and (167.0750,416.9590) .. (135.0500,386.9050) ..
+		controls (99.2850,353.3370) and (113.6520,315.0500) .. (142.7900,313.1040) ..
+		controls (171.9120,311.1590) and (189.3980,346.1160) .. (204.9410,355.8400) ..
+		controls (220.4650,365.5280) and (279.5340,387.6000) .. (310.7350,351.9320) ..
+		controls (344.7100,313.1040) and (288.1410,293.0120) .. (246.6760,286.9300) ..
+		controls (187.4730,278.1640) and (112.7260,246.1370) .. (118.5410,183.0230) ..
+		controls (124.3580,119.9490) and (172.1230,87.6090) .. (222.3910,83.0470) ..
+		controls (286.4680,77.2300) and (328.1820,92.7540) .. (361.1760,120.9070) ..
+		controls (399.3270,153.4360) and (378.6840,189.8010) .. (354.3770,192.7270) ..
+		controls (330.1660,195.6360) and (302.9730,139.2230) .. (249.5860,138.3750) ..
+		controls (194.5590,137.5110) and (157.3690,195.6360) .. (225.3000,212.1590) ..
+		controls (293.2660,228.6640) and (366.0500,235.4450) .. (392.2610,297.5760) ..
+		controls (418.4900,359.7130) and (351.5070,425.7010) .. (276.7400,429.5960) --
+		cycle;
+		\protect\end{tikzpicture}}%
+	~}
+
+\usepackage{footmisc} % enabling footnotes.
+
+\usepackage{eurosym}
+% moderncv themes
+\moderncvtheme[grey, modroman]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvcolor{black}   
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\usepackage[T1]{fontenc}
+
+
+\usepackage[german]{babel}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+\setlength{\topmargin}{-0.7in}
+\usepackage{calc}
+\setlength{\textheight}{\textheight+0.5in}
+
+\usepackage{layout}
+
+
+\usepackage{eurosym}
+
+% personal data
+\firstname{Ramtin}
+\familyname{Azimi}
+%\title{CV}               % optional, remove the line if not wanted
+\address{Calle el Claudiano, 15}{35500 Arrecife, Spain}{}    % optional, remove the line if not wanted
+\mobile{(+34)~699~647~277}                    % optional, remove the line if not wanted
+%\phone{phone (optional)}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{rt.azimi@gmail.com}                      % optional, remove the line if not wanted
+\homepage{ramtinazimi.com}
+%\extrainfo{\faGithub \hspace{0.05cm} \href{http://www.github.com/ramtinazimi}{ramtinazimi}} % optional, remove the line if not wanted
+\photo[64pt]{cv.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{Some quote (optional)}                 % optional, remove the line if not wanted
+\extrainfo{\faGithub \hspace{0.05cm}
+\href{http://www.github.com/ramtinazimi}{ramtinazimi} \\ \skypesocialsymbol~rtn\_putin}
+
+
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+
+\blfootnote{\noindent Click on \textsuperscript{\ExternalLink} in order to see a certificate.}
+
+\section{Professional Experience}
+
+\cventry{09/2017--present}{Primary/Secondary German and Art Teacher\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{\href{https://www.aislanzarote.com/}{Colegio Arenas Int.}}{Lanzarote, Spain}{}{Additionally, taught an extracurricular CV-course\href{https://github.com/ramtinazimi/life-skills/tree/master/CV_Skills}{\textsuperscript{\ExternalLink}} to seniors at school.\\ E-mailed individual grades to 120 students per week by implementing a Python-program.}
+
+\cventry{02/2017--08/2017}{German Teacher\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{\href{http://colegio-aleman.com/}{Colegio Alemán}}{Montería, Colombia}{}{Educated infants by employing the inmersion method and creating logical and challenging games.}
+
+\cventry{02/2016--11/2016}{Data Analyst\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{\href{https://rewe-digital.com/}{Rewe Digital GmbH}}{Cologne, Germany}{}{Reduced costs by \euro 23K per year by automizing profit and loss reports.\\
+Tools: R, SQL, Excel, PowerPoint, Thinkcell.}
+
+\cventry{10/2015--04/2016}{Risk Consultant\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{\href{http://www.pwc.de/}{PricewaterhouseCoopers AG}}{Munich, Germany}{}{Created and pitched dashboard for the Predictive Suite\href{http://www.pwc.de/de/risk/effiziente-planung-und-steuerung-mit-der-pwc-predictive-analytics-suite.html}{\textsuperscript{\ExternalLink}} to automobile, energy and food industry.\\
+Tools: R, RShiny, \LaTeX, PowerPoint, Excel, VBA.}
+
+\cventry{02/2013--08/2014}{Software Engineer\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{\href{https://www.stockpulse.de/de/}{StockPulse GmbH}}{Cologne, Germany}{}{Extracted millions of data per week for the sentiment analysis by implementing web crawlers.\\
+	Tools: Java/JDBC, Regular Expressions, SQL, Storm Technology.}
+
+%\cventry{08/2012--12/2012}{Supply Chain Management\href{https://www.dropbox.com/s/2mg3b8qrnl0pz7k/UniversitaetKoeln.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{University of Cologne}{Cologne, Germany}{}{Achievement: Extended the institute's website. Tools: Typo3, HTML, CSS.}
+
+
+%\cventry{07/2008--08/2008}{Intern\href{https://www.dropbox.com/s/5udzu2zlxuq6dcq/SepidTehran.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{Sepid-Tehran Co. Ltd.}{Tehran, Iran}{}{Determined optimal production batches and travelling routes with internal software.}
+
+
+\section{Education}
+
+\cventry{10/2012--10/2015}{B.Sc. Computer Science\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{University of Bonn}
+{Bonn, Germany}{}
+{CGPA: 1.4/1.0. Graduated amongst top 5\% of class. Thesis: Secretary Problem\href{https://github.com/ramtinazimi/bachelor-thesis}{\textsuperscript{\ExternalLink}}. \\
+	Programming projects: Filter-Kruskal\href{https://github.com/ramtinazimi/optimize-mst}{\textsuperscript{\ExternalLink}}, BRNN\href{https://github.com/ramtinazimi/brnn}{\textsuperscript{\ExternalLink}}.\\
+	Scholarship: Awarded with the Germany Scholarship\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}} for two years based on academic merit.}
+
+\cventry{02/2014--08/2014}{Study Abroad\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{UNSW Australia}
+{Sydney, Australia}{}{Coursework: Number Theory, Statistics, Artificial Intelligence and Theory of Computation.\\ Scholarship: Tuition fees were covered by the University of Bonn based on academic merit.}
+
+%\cventry{10/2011--08/2012}{B.S. Mathematical Economics}{University of Cologne}
+%{Cologne, Germany}{}
+%{}
+
+
+\cventry{09/2002--07/2011}{High School Diploma\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{\textsuperscript{\ExternalLink}}}{Heinrich-Heine-Gymnasium}{Cologne, Germany}{}{CGPA: 1.6/1.0. Graduated amongst top 8\% of class.}
+
+\cventry{09/2008--07/2009}{Study Abroad}{San Marin High School}{Novato, CA, USA}{}{Awarded as an interscholastic athlete\href{https://www.dropbox.com/s/as048xvme80iatz/certificate_dummy.pdf?dl=0}{{\textsuperscript{\ExternalLink}}} for outstanding achievements in sports and academics.}
+
+
+%\section{Programming projects}
+%\cvline{06/2015--09/2015}{\textbf{Filter-Kruskal}\href{https://github.com/ramtinazimi/optimize-mst}{\textsuperscript{\ExternalLink}}. Optimized the standard Kruskal for a minimal spanning tree.}
+%\cvline{08/2014--02/2015}{\textbf{Bichromatic Reversed Nearest Neighbor}\href{https://github.com/ramtinazimi/brnn}{\textsuperscript{\ExternalLink}}. Located optimal position for a new store.}
+%\cvline{07/2017--07/2017}{\textbf{Imgur App}\href{https://github.com/ramtinazimi/Imgur}{\textsuperscript{\ExternalLink}}. A simple Android application for the imgur website.}
+
+
+
+%\section{Volunteer Work}
+%\cvline{06/2016--08/2016s}{\textbf{Köln Kitas}\href{https://www.dropbox.com/s/5svsby88soy0fwy/KoelnKitas.pdf?dl=0}{\textsuperscript{\ExternalLink}}. Watched and entertained children at the kindergarden.}
+%\cvline{10/2015--01/2016}{\textbf{ZOB-Angels}. Provided food and medicine to refugees at Munich's central bus station.}
+%\newpage
+
+\section{Skills \& Interests}
+
+\cvitem{Languages} 
+	{\begin{tabular}{ l @{\hskip 0.3in} l @{\hskip 0.3in} l @{\hskip 0.3in}l}
+		German $\bullet$ Persian & English\href{https://www.dropbox.com/s/b77awpu4drwfun7/TOEFL.pdf?dl=0}{{\textsuperscript{\ExternalLink}}} & Spanish & French \\
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.3);
+		\end{tikzpicture} &
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.8,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.4,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (1.3,.3);
+		\end{tikzpicture}   
+	\end{tabular}}{}
+	
+\cvitem{Programming Languages} 
+{\begin{tabular}{ l  @{\hskip 0.3in}l  @{\hskip 0.3in} l  @{\hskip 0.3in} l}
+		Java & JavaScript & R $\bullet$ Python & MATLAB \\
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.3);
+		\end{tikzpicture} &
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.5,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.3,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (1.3,.3);
+		\end{tikzpicture}   \\
+	\end{tabular}}{}
+		
+\cvitem{Software \& Tools} 
+{\begin{tabular}{ l  @{\hskip 0.3in}l  @{\hskip 0.3in} l  @{\hskip 0.3in} l}
+		MS Office $\bullet$  \LaTeX & SQL & Ionic $\bullet$ Android & Git \\
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (3,.3);
+		\end{tikzpicture} &
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.5,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (2.3,.3);
+		\end{tikzpicture} & 
+		\begin{tikzpicture}
+		%\node [anchor=west] at (.1,.8) {Java};
+		\draw [fill=gray] (0,0) rectangle (3,.3);
+		\draw [fill={rgb:red,1;green,2;blue,3}] (0,0) rectangle (1.3,.3);
+		\end{tikzpicture}   \\
+	\end{tabular}}{}	
+\cvitem{Interests}{Running, Swimming, Playing the Guitar, Education.}
+
+%\cvlanguage{German}{Native Speaker}{}
+%\cvlanguage{Persian}{Native Speaker}{}
+%\cvlanguage{English}{Fluent Speaker}{}
+%\cvlanguage{Spanish}{Proficient Speaker}{}
+%\cvlanguage{French}{Intermediate Speaker}{}
+
+%\section{Skills}
+%\cvline{Languages}{}
+%\cvline{Program. Lang.}{}
+%\cvline{Frameworks}{}
+%\cvline{Interests}{}
+
+%\section{Skills}
+%\cvcomputer{Programming}{Java, JavaScript, Python}{}{Excellent proficiency.}
+%\cvcomputer{MS Office}{PowerPoint, Excel, Word}{}{Excellent proficiency.}
+%\cvcomputer{Others}{Databases, SQL, Git}{}{}
+
+
+%\section{Interests}
+%\cvline{Running}{Regular work out since 12 years of age.}{}{}
+%\cvline{Basketball}{Member of the Junior Varsity team at San Marin High School.}{}{}
+%\cvline{Swimming}{Member of the 1. SvK Köln for 10 years.}{}{}
+%\cvline{Guitar}{Member of the Musikhochschule Köln for 6 years.}{}{}
+%\cvline{Linguistics}{Personal development of languages. Research in phonetics and speech segments. }
+
+
+
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[0.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+    }%
+}
+\newcommand{\cvreference}[7]{%
+    \textbf{#1}\newline% Name
+    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~#6\newline}%
+    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
